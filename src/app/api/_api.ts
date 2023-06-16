@@ -4,7 +4,7 @@ import { parseCookies } from 'nookies';
 const {'todo-token': token} = parseCookies()
 
 const baseUrl = axios.create({
-    baseURL:'http://localhost:3001'
+    baseURL:'https://backend-todolist-mgb1.onrender.com/'
 });
 
 if(token){
