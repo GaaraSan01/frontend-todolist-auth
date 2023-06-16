@@ -4,7 +4,7 @@ export const title = styled.h1`
     color: var(--terciary-color);
 `
 export const main = styled.main`
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 15px;
     display: flex;
