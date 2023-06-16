@@ -26,20 +26,19 @@ const FormTask = () => {
     return(
         <>
             <S.Form onSubmit={handleSubmit(postTask)}>
-                <S.Div>
-                    <S.Input 
-                        type='text' 
-                        placeholder='Digite o titulo da tarefa...'
-                        autoComplete='off'
-                        {...register('title')}
-                    />
-                    <S.Input 
-                        type='text' 
-                        placeholder='Digite a descrição da tarefa...'
-                        autoComplete='off'
-                        {...register('description')}
-                    />
-                </S.Div>
+
+                <S.Input 
+                    type='text' 
+                    placeholder='Digite o titulo da tarefa...'
+                    autoComplete='off'
+                    {...register('title')}
+                />
+                <S.Input 
+                    type='text' 
+                    placeholder='Digite a descrição da tarefa...'
+                    autoComplete='off'
+                    {...register('description')}
+                />
                 <S.Button>+</S.Button>
             </S.Form>
         </>
