@@ -23,7 +23,7 @@
     "react-hook-form": "^7.44.1",
     "react-icons": "^4.9.0",
     "react-query": "^3.39.3",
-    "styled-components": "^5.3.11",
+    "styled-components": "^6.0.0-rc.3",
     "typescript": "5.0.4",
     "zod": "^3.21.4"
   },
