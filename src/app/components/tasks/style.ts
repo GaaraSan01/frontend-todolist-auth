@@ -60,7 +60,7 @@ export const Select = styled.select`
 
     background-color: var(--terciary-color);
     cursor: pointer;
-    :focus{
+    &:focus{
         outline: none;
     }
 `
@@ -89,7 +89,7 @@ export const Input = styled.input`
     font-size: 1rem;
     font-weight: 600;
     flex: 1 0 140px;
-    :focus{
+    &:focus{
         outline: none;
     }
 `
@@ -111,7 +111,7 @@ export const Button = styled.button`
     transition: ease-in-out 0.3s;
     cursor: pointer;
 
-    :hover{
+    &:hover{
         background: var(--secundary-color);
         color: var(--primary-color);
     }

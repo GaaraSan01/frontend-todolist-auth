@@ -25,7 +25,7 @@ export const Icone = styled.button`
     transition: ease-in-out 0.3s;
     cursor: pointer;
 
-    :hover{
+    &:hover{
         background: var(--primary-color);
         color: var(--terciary-color);
         border: solid 1px var(--terciary-color);

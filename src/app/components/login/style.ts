@@ -25,7 +25,7 @@ export const Input = styled.input`
     padding: 10px;
     border-radius: 5px;
 
-    :focus{
+    &:focus{
         outline: none;
     }
 `;
@@ -41,7 +41,7 @@ export const Button = styled.button`
     transition: ease-in-out 0.3s;
     cursor: pointer;
 
-    :hover{
+    &:hover{
         background: var(--primary-color);
         color: var(--terciary-color);
     }
