@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Form = styled.form`
-    height: 400px;
+    min-height: 400px;
     width: 320px;
     border-radius: 10px;
     background: var(--secundary-color);
@@ -34,6 +34,7 @@ export const Button = styled.button`
     font-weight: bold;
     font-size: 14px;
     padding: 12px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 10px;
     background: var(--terciary-color);
