@@ -17,12 +17,11 @@ const CadastroForm = () => {
         }),
         email: string().nonempty('O campo email é obrigatório')
         .email('Email invalido').toLowerCase(),
-        password: string().min(6, 'O minimo é 6 caracteres')
-        .nonempty('O campo senha é obrigatório'),
-        confirmPassword: string().min(6).nonempty('Confirme sua senha')
+        password: string().min(6, 'O minimo é 6 caracteres'),
+        confirmPassword: string().min(6, 'Por favor, confirme sua senha.')
     }).refine(data => data.password === data.confirmPassword, {
-        message: 'As senhas não conferem!',
-        path: ['confirmPassword']
+        path: ['confirmPassword'],
+        message: 'As senhas não coincidem'
     })
 
     type CreateUserFormData = z.infer<typeof createUserSchema>
@@ -36,9 +35,7 @@ const CadastroForm = () => {
     const createUser = async (data: createdData) => {
         try {
             const response = await baseUrl.post('/cadastro', data)
-            const dataCadastro = await response.data
-            const { message } = await dataCadastro
-            console.log(message)
+            alert('Cadastrado com sucesso!')
             push('/')
         } catch (error) {
             console.log(error)
