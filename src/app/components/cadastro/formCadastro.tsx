@@ -37,6 +37,7 @@ const CadastroForm = () => {
             const response = await baseUrl.post('/cadastro', data)
             alert('Cadastrado com sucesso!')
             push('/')
+            return response
         } catch (error) {
             console.log(error)
         }
